@@ -25,32 +25,27 @@
 # You should create one R script called run_analysis.R that does the following. 
 # 1.Merges the training and the test sets to create one data set.
 # 2.Extracts only the measurements on the mean and standard deviation for each measurement. 
-#     should 555 be included?
-#     should meanFreq be included?
 # 3.Uses descriptive activity names to name the activities in the data set
 # 4.Appropriately labels the data set with descriptive variable names. 
-# 
 # 5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-#x_test and x_train are 8976 bytes long but I don't have any idea on the # of columns or column names
-#subject_test/traing.txt (1 col) - subject ID corresponding to the rows in the other tables
-#X_test/train.txt - 8976 bytes per row, 561 elements?
-#   join to features.txt (561 rows.- space delimited - #<space>description)
-#y_test.txt (1 col) (2948 recs each) - activity # 1-6 (walk, walk up, walk down, etc)
-#   join to Activity_lables.txt
-#subject_train.txt, X_train.txt, y_train.txt (7353 recs each)
-
-# Features.txt - list of 561 features - does this correspond to the x_test/train.txt column headings?
 
 ##########################################################
 
-setwd("C:/Users/Peggy/Documents/Training/Coursera/CleaningData/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset")
+# *** Assumes data file has already been unzipped and the following
+#     files are located in the current working directory:
+#       activity_labels.txt
+#       features.txt
+#       test/subject_test.txt
+#       test/x_test.txt
+#       test/y_test.txt
+#       train/subject_test.txt
+#       train/x_test.txt
+#       train/y_test.txt
 
-install.packages(c("dplyr","tidyr","sqldf","tcltk"))
+install.packages(c("dplyr","tidyr","sqldf"))
 library(dplyr)
 library(tidyr)
 library(sqldf)
-#library(tcltk)
 
 # get data needed for both test and train datasets
 activity_labels <- read.table("activity_labels.txt", header=FALSE, sep="", col.names = c("activity_id","activity"))
@@ -72,27 +67,36 @@ subject_train <- read.table("train/subject_train.txt", header=FALSE, sep="", col
 y_train <- read.table("train/y_train.txt", header=FALSE, sep="", col.names=c("activity_id"))
 x_train <- read.table("train/x_train.txt", header=FALSE, sep="", col.names=colNames)
 
-# merge datasets
+# merge test datasets
 test <- merge(y_test, activity_labels, by.x="activity_id", by.y="activity_id", ALL=TRUE)
 test <- cbind(test, subject_test, x_test)
 
+# merge train datasets
 train <- merge(y_train, activity_labels, by.x="activity_id", by.y="activity_id", ALL=TRUE)
 train <- cbind(train, subject_train, x_train)
 
 # merge the test and train datasets
 DF <- rbind(test, train)
 
-# create subset of mean and std dev columns
+# create subset of activity, subject and mean and std dev columns
 cols <- c(2,3, c(grep(".mean", names(DF))), c(grep(".std", names(DF))))
 meanStdDF <- DF[,cols]
 
+# group by the activity and subject_id
 actSubj <- group_by(meanStdDF, activity, subject_id)
-#this works but I don't want to specify every column
-# it seems like one of the apply functions should work
-#asDF <- summarize(act, mean(tBodyAcc.mean.X), mean(tBodyAcc.mean.Y))
 
-# calculate mean on all the values in actSubj by act/subject
-cols <- names(actSubj)[-1:-2] #cols to summarize
+# calculate mean on all the values in actSubj by activity and subject
+#   one record per activity/subject
+cols <- names(actSubj)[-1:-2] #summarize all columns except activity and subject_id
 m <- sapply(cols, function(x) substitute(mean(x), list(x=as.name(x))))
 actSubjDF <- do.call(summarise, c(list(.data=actSubj), m))
+
+# add "mean." to the front of the summarized columns to make them more understandable of what they are
+d <- names(actSubjDF)
+dm <- paste("mean.", d[3:length(d)], sep="")
+names(actSubjDF)[3:length(actSubjDF)] = dm
+
+# output the results to the current working folder
+write.table(actSubjDF, file="Mean_by_Activity_Subject.txt", row.names=FALSE)
+
 
