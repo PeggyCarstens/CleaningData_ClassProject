@@ -64,171 +64,171 @@ All measurements have been normalised between -1 and +1.
 | Variable name / Description                         | Type/Size    | Values              |
 | --------------------------------------------------- | ------------ | ------------------- |
 | activity                                            | Character 10 | LAYING              |         	
-| / Activity Name                                       |              | SITTING             |
+|   /  Activity Name                                     |              | SITTING             |
 |                                                     |              | STANDING            |
 |                                                     |              | WALKING             |
 |                                                     |              | WALKING\_DOWNSTAIRS |
 |                                                     |              | WALKING\_UPSTAIRS   |
 | subject_id                                          | Integer      |                     |
-| / ID of the subject who performed the activity        |              |                     |
+|   /  ID of the subject who performed the activity     |              |                     |
 | mean.tBodyAcc.mean.X                                | Numeric      |                     |
-| / Mean of tBodyAcc-mean\(\)-X                         |              |                     |
+|   /  Mean of tBodyAcc-mean\(\)-X                      |              |                     |
 | mean.tBodyAcc.mean.Y                                | Numeric      |                     |
-|   Mean of tBodyAcc-mean\(\)-Y                        |              |                     |
+| /  Mean of tBodyAcc-mean\(\)-Y                        |              |                     |
 | mean.tBodyAcc.mean.Z                                | Numeric      |                     |
-|   Mean of tBodyAcc-mean\(\)-Z                        |              |                     |
+| /  Mean of tBodyAcc-mean\(\)-Z                        |              |                     |
 | mean.tGravityAcc.mean.X                             | Numeric      |                     |
-|   Mean of tGravityAcc-mean\(\)-X                     |              |                     |
+| /  Mean of tGravityAcc-mean\(\)-X                     |              |                     |
 | mean.tGravityAcc.mean.Y                             | Numeric      |                     |
-|   Mean of tGravityAcc-mean\(\)-Y                     |              |                     |
+| /  Mean of tGravityAcc-mean\(\)-Y                     |              |                     |
 | mean.tGravityAcc.mean.Z                             | Numeric      |                     |
-|   Mean of tGravityAcc-mean\(\)-Z                     |              |                     |
+| /  Mean of tGravityAcc-mean\(\)-Z                     |              |                     |
 | mean.tBodyAccJerk.mean.X                            | Numeric      |                     |
-|   Mean of tBodyAccJerk-mean\(\)-X                    |              |                     |
+| /  Mean of tBodyAccJerk-mean\(\)-X                    |              |                     |
 | mean.tBodyAccJerk.mean.Y                            | Numeric      |                     |
-|   Mean of tBodyAccJerk-mean\(\)-Y                    |              |                     |
+| /  Mean of tBodyAccJerk-mean\(\)-Y                    |              |                     |
 | mean.tBodyAccJerk.mean.Z                            | Numeric
-|   Mean of tBodyAccJerk-mean\(\)-Z                    |              |                     |
+| /  Mean of tBodyAccJerk-mean\(\)-Z                    |              |                     |
 | mean.tBodyGyro.mean.X                               | Numeric      |                     |
-|   Mean of tBodyGyro-mean\(\)-X                       |              |                     |
+| /  Mean of tBodyGyro-mean\(\)-X                       |              |                     |
 | mean.tBodyGyro.mean.Y                               | Numeric      |                     |
-|   Mean of tBodyGyro-mean\(\)-Y                       |              |                     |
+| /  Mean of tBodyGyro-mean\(\)-Y                       |              |                     |
 | mean.tBodyGyro.mean.Z                               | Numeric      |                     |
-|   Mean of tBodyGyro-mean\(\)-Z                       |              |                     |
+| /  Mean of tBodyGyro-mean\(\)-Z                       |              |                     |
 | mean.tBodyGyroJerk.mean.X                           | Numeric      |                     |
-|   Mean of tBodyGyroJerk-mean\(\)-X                   |              |                     |
+| /  Mean of tBodyGyroJerk-mean\(\)-X                   |              |                     |
 | mean.tBodyGyroJerk.mean.Y                           | Numeric      |                     |
-|   Mean of tBodyGyroJerk-mean\(\)-Y                   |              |                     |
+| /  Mean of tBodyGyroJerk-mean\(\)-Y                   |              |                     |
 | mean.tBodyGyroJerk.mean.Z                           | Numeric      |                     |
-|   Mean of tBodyGyroJerk-mean\(\)-Z                   |              |                     |
+| /  Mean of tBodyGyroJerk-mean\(\)-Z                   |              |                     |
 | mean.tBodyAccMag.mean                               | Numeric      |                     |
-|   Mean of tBodyAccMag-mean\(\)                        |              |                     |
+| /  Mean of tBodyAccMag-mean\(\)                        |              |                     |
 | mean.tGravityAccMag.mean                            | Numeric      |                     | 
-|   Mean of tGravityAccMag-mean\(\)                     |              |                     |
+| /  Mean of tGravityAccMag-mean\(\)                     |              |                     |
 | mean.tBodyAccJerkMag.mean                           | Numeric      |                     |
-|   Mean of tBodyAccJerkMag-mean\(\)                    |              |                     |
+| /  Mean of tBodyAccJerkMag-mean\(\)                    |              |                     |
 | mean.tBodyGyroMag.mean                              | Numeric      |                     |
-|   Mean of tBodyGyroMag-mean\(\)                       |              |                     |
+| /  Mean of tBodyGyroMag-mean\(\)                       |              |                     |
 | mean.tBodyGyroJerkMag.mean                          | Numeric      |                     |
-|   Mean of tBodyGyroJerkMag-mean\(\)                   |              |                     |
+| /  Mean of tBodyGyroJerkMag-mean\(\)                   |              |                     |
 | mean.fBodyAcc-mean.X                                | Numeric      |                     |
-|  Mean of fBodyAcc-mean\(\)-X                         |              |                     |
+| /  Mean of fBodyAcc-mean\(\)-X                         |              |                     |
 | mean.fBodyAcc.mean.Y                                | Numeric      |                     | 
-|  Mean of fBodyAcc-mean\(\)-Y                         |              |                     |
+| /  Mean of fBodyAcc-mean\(\)-Y                         |              |                     |
 | mean.fBodyAcc.mean.Z                                | Numeric      |                     |
-|  Mean of fBodyAcc-mean\(\)-Z                         |              |                     |
+| /  Mean of fBodyAcc-mean\(\)-Z                         |              |                     |
 | mean.fBodyAcc.meanFreq.X                            | Numeric      |                     |
-|  Mean of fBodyAcc-meanFreq\(\)-X                     |              |                     |
+| /  Mean of fBodyAcc-meanFreq\(\)-X                     |              |                     |
 | mean.fBodyAcc.meanFreq.Y                            | Numeric      |                     |
-|  Mean of fBodyAcc-meanFreq\(\)-Y                     |              |                     |
+| /  Mean of fBodyAcc-meanFreq\(\)-Y                     |              |                     |
 | mean.fBodyAcc.meanFreq.Z                            | Numeric      |                     |
-|  Mean of fBodyAcc-meanFreq\(\)-Z                     |              |                     |
+| /  Mean of fBodyAcc-meanFreq\(\)-Z                     |              |                     |
 | mean.fBodyAccJerk.mean.X                            | Numeric      |                     |
-|  Mean of fBodyAccJerk-mean\(\)-X                     |              |                     |
+| /  Mean of fBodyAccJerk-mean\(\)-X                     |              |                     |
 | mean.fBodyAccJerk.mean.Y                            | Numeric      |                     |
-|  Mean of fBodyAccJerk-mean\(\)-Y                     |              |                     |
+| /  Mean of fBodyAccJerk-mean\(\)-Y                     |              |                     |
 | mean.fBodyAccJerk.mean.Z                            | Numeric      |                     |
-|  Mean of fBodyAccJerk-mean\(\)-Z                     |              |                     |
+| /  Mean of fBodyAccJerk-mean\(\)-Z                     |              |                     |
 | mean.fBodyAccJerk.meanFreq.X                        | Numeric      |                     |
-|  Mean of fBodyAccJerk-meanFreq\(\)-X                 |              |                     |
+| /  Mean of fBodyAccJerk-meanFreq\(\)-X                 |              |                     |
 | mean.fBodyAccJerk.meanFreq.Y                        | Numeric      |                     |
-|  Mean of fBodyAccJerk-meanFreq\(\)-Y                 |              |                     |
+| /  Mean of fBodyAccJerk-meanFreq\(\)-Y                 |              |                     |
 | mean.fBodyAccJerk.meanFreq.Z                        | Numeric      |                     |
-|  Mean of fBodyAccJerk-meanFreq\(\)-Z                 |              |                     |
+| /  Mean of fBodyAccJerk-meanFreq\(\)-Z                 |              |                     |
 | mean.fBodyGyro.mean.X                               | Numeric      |                     |
-|  Mean of fBodyGyro-mean\(\)-X                        |              |                     |
+| /  Mean of fBodyGyro-mean\(\)-X                        |              |                     |
 | mean.fBodyGyro.mean.Y                               | Numeric      |                     |
-|  Mean of fBodyGyro-mean\(\)-Y                        |              |                     |
+| /  Mean of fBodyGyro-mean\(\)-Y                        |              |                     |
 | mean.fBodyGyro.mean.Z                               | Numeric      |                     |
-|  Mean of fBodyGyro-mean\(\)-Z                        |              |                     |
+| /  Mean of fBodyGyro-mean\(\)-Z                        |              |                     |
 | mean.fBodyGyro.meanFreq.X                           | Numeric      |                     |
-|  Mean of fBodyGyro-meanFreq\(\)-X                    |              |                     |
+| /  Mean of fBodyGyro-meanFreq\(\)-X                    |              |                     |
 | mean.fBodyGyro.meanFreq.Y                           | Numeric      |                     |
-|  Mean of fBodyGyro-meanFreq\(\)-Y                    |              |                     |
+| /  Mean of fBodyGyro-meanFreq\(\)-Y                    |              |                     |
 | mean.fBodyGyro.meanFreq.Z                           | Numeric      |                     |
-|  Mean of fBodyGyro-meanFreq\(\)-Z                    |              |                     |
+| /  Mean of fBodyGyro-meanFreq\(\)-Z                    |              |                     |
 | mean.fBodyAccMag.mean                               | Numeric      |                     |
-|  Mean of fBodyAccMag-mean\(\)                         |              |                     |
+| /  Mean of fBodyAccMag-mean\(\)                         |              |                     |
 | mean.fBodyAccMag-meanFreq                           | Numeric      |                     |
-|  Mean of fBodyAccMag-meanFreq\(\)                     |              |                     |
+| /  Mean of fBodyAccMag-meanFreq\(\)                     |              |                     |
 | mean.fBodyBodyAccJerkMag.mean                       | Numeric      |                     |
-|  Mean of fBodyBodyAccJerkMag-mean\(\)                 |              |                     |
+| /  Mean of fBodyBodyAccJerkMag-mean\(\)                 |              |                     |
 | mean.fBodyBodyAccJerkMag.meanFreq                   | Numeric      |                     |
-|  Mean of fBodyBodyAccJerkMag-meanFreq\(\)             |              |                     |
+| /  Mean of fBodyBodyAccJerkMag-meanFreq\(\)             |              |                     |
 | mean.fBodyBodyGyroMag.mean                          | Numeric      |                     |
-|  Mean of fBodyBodyGyroMag-mean\(\)                    |              |                     |
+| /  Mean of fBodyBodyGyroMag-mean\(\)                    |              |                     |
 | mean.fBodyBodyGyroMag.meanFreq                      | Numeric      |                     |
-|  Mean of fBodyBodyGyroMag-meanFreq\(\)                |              |                     |
+| /  Mean of fBodyBodyGyroMag-meanFreq\(\)                |              |                     |
 | mean.fBodyBodyGyroJerkMag.mean                      | Numeric      |                     |
-|  Mean of fBodyBodyGyroJerkMag-mean\(\)                |              |                     |
+| /  Mean of fBodyBodyGyroJerkMag-mean\(\)                |              |                     |
 | mean.fBodyBodyGyroJerkMag.meanFreq                  | Numeric      |                     |
-|  Mean of fBodyBodyGyroJerkMag-meanFreq\(\)            |              |                     |
+| /  Mean of fBodyBodyGyroJerkMag-meanFreq\(\)            |              |                     |
 | mean.tBodyAcc.std.X                                 | Numeric      |                     |
-|  Mean of tBodyAcc-std\(\)-X                          |              |                     |
+| /  Mean of tBodyAcc-std\(\)-X                          |              |                     |
 | mean.tBodyAcc.std.Y                                 | Numeric      |                     |
-|  Mean of tBodyAcc-std\(\)-Y                          |              |                     |
+| /  Mean of tBodyAcc-std\(\)-Y                          |              |                     |
 | mean.tBodyAcc.std.Z                                 | Numeric      |                     |
-|  Mean of tBodyAcc-std\(\)-Z                          |              |                     |
+| /  Mean of tBodyAcc-std\(\)-Z                          |              |                     |
 | mean.tGravityAcc.std.X                              | Numeric      |                     |
-|  Mean of tGravityAcc-std\(\)-X                       |              |                     |
+| /  Mean of tGravityAcc-std\(\)-X                       |              |                     |
 | mean.tGravityAcc.std.Y                              | Numeric      |                     |
-|  Mean of tGravityAcc-std\(\)-Y                       |              |                     |
+| /  Mean of tGravityAcc-std\(\)-Y                       |              |                     |
 | mean.tGravityAcc.std.Z                              | Numeric      |                     |
-|  Mean of tGravityAcc-std\(\)-Z                       |              |                     |
+| /  Mean of tGravityAcc-std\(\)-Z                       |              |                     |
 | mean.tBodyAccJerk.std.X                             | Numeric      |                     |
-|  Mean of tBodyAccJerk-std\(\)-X                      |              |                     |
+| /  Mean of tBodyAccJerk-std\(\)-X                      |              |                     |
 | mean.tBodyAccJerk.std.Y                             | Numeric      |                     |
-|  Mean of tBodyAccJerk-std\(\)-Y                      |              |                     |
+| /  Mean of tBodyAccJerk-std\(\)-Y                      |              |                     |
 | mean.tBodyAccJerk.std.Z                             | Numeric      |                     |
-|  Mean of tBodyAccJerk-std\(\)-Z                      |              |                     |
+| /  Mean of tBodyAccJerk-std\(\)-Z                      |              |                     |
 | mean.tBodyGyro.std.X                                | Numeric      |                     |
-|  Mean of tBodyGyro-std\(\)-X                         |              |                     |
+| /  Mean of tBodyGyro-std\(\)-X                         |              |                     |
 | mean.tBodyGyro.std.Y                                | Numeric      |                     |
-|  Mean of tBodyGyro-std\(\)-Y                         |              |                     |
+| /  Mean of tBodyGyro-std\(\)-Y                         |              |                     |
 | mean.tBodyGyro.std.Z                                | Numeric      |                     |
-|  Mean of tBodyGyro-std\(\)-Z                         |              |                     |
+| /  Mean of tBodyGyro-std\(\)-Z                         |              |                     |
 | mean.tBodyGyroJerk.std.X                            | Numeric      |                     |
-|  Mean of tBodyGyroJerk-std\(\)-X                     |              |                     |
+| /  Mean of tBodyGyroJerk-std\(\)-X                     |              |                     |
 | mean.tBodyGyroJerk.std.Y                            | Numeric      |                     |
-|  Mean of tBodyGyroJerk-std\(\)-Y                     |              |                     |
+| /  Mean of tBodyGyroJerk-std\(\)-Y                     |              |                     |
 | mean.tBodyGyroJerk.std.Z                            | Numeric      |                     |
-|  Mean of tBodyGyroJerk-std\(\)-Z                     |              |                     |
+| /  Mean of tBodyGyroJerk-std\(\)-Z                     |              |                     |
 | mean.tBodyAccMag.std                                | Numeric      |                     |
-|  Mean of tBodyAccMag-std\(\)                          |              |                     |
+| /  Mean of tBodyAccMag-std\(\)                          |              |                     |
 | mean.tGravityAccMag.std                             | Numeric      |                     |
-|  Mean of tGravityAccMag-std\(\)                       |              |                     |
+| /  Mean of tGravityAccMag-std\(\)                       |              |                     |
 | mean.tBodyAccJerkMag.std                            | Numeric      |                     |
-|  Mean of tBodyAccJerkMag-std\(\)                      |              |                     |
+| /  Mean of tBodyAccJerkMag-std\(\)                      |              |                     |
 | mean.tBodyGyroMag.std                               | Numeric      |                     |
-|  Mean of tBodyGyroMag-std\(\)                         |              |                     |
+| /  Mean of tBodyGyroMag-std\(\)                         |              |                     |
 | mean.tBodyGyroJerkMag.std                           | Numeric      |                     |
-|  Mean of tBodyGyroJerkMag-std\(\)                     |              |                     |
+| /  Mean of tBodyGyroJerkMag-std\(\)                     |              |                     |
 | mean.fBodyAcc.std.X                                 | Numeric      |                     |
-|  Mean of fBodyAcc-std\(\)-X                          |              |                     |
+| /  Mean of fBodyAcc-std\(\)-X                          |              |                     |
 | mean.fBodyAcc.std.Y                                 | Numeric      |                     |
-|  Mean of fBodyAcc-std\(\)-Y                          |              |                     |
+| /  Mean of fBodyAcc-std\(\)-Y                          |              |                     |
 | mean.fBodyAcc.std.Z                                 | Numeric      |                     |
-|  Mean of fBodyAcc-std\(\)-Z                          |              |                     |
+| /  Mean of fBodyAcc-std\(\)-Z                          |              |                     |
 | mean.fBodyAccJerk.std.X                             | Numeric      |                     |
-|  Mean of fBodyAccJerk-std\(\)-X                      |              |                     |
+| /  Mean of fBodyAccJerk-std\(\)-X                      |              |                     |
 | mean.fBodyAccJerk.std.Y                             | Numeric      |                     |
-|  Mean of fBodyAccJerk-std\(\)-Y                      |              |                     |
+| /  Mean of fBodyAccJerk-std\(\)-Y                      |              |                     |
 | mean.fBodyAccJerk.std.Z                             | Numeric      |                     |
-|  Mean of fBodyAccJerk-std\(\)-Z                      |              |                     |
+| /  Mean of fBodyAccJerk-std\(\)-Z                      |              |                     |
 | mean.fBodyGyro.std.X                                | Numeric      |                     |
-|  Mean of fBodyGyro-std\(\)-X                         |              |                     |
+| /  Mean of fBodyGyro-std\(\)-X                         |              |                     |
 | mean.fBodyGyro.std.Y                                | Numeric      |                     |
-|  Mean of fBodyGyro-std\(\)-Y                         |              |                     |
+| /  Mean of fBodyGyro-std\(\)-Y                         |              |                     |
 | mean.fBodyGyro.std.Z                                | Numeric      |                     |
-|  Mean of fBodyGyro-std\(\)-Z                         |              |                     |
+| /  Mean of fBodyGyro-std\(\)-Z                         |              |                     |
 | mean.fBodyAccMag.std                                | Numeric      |                     |
-|  Mean of fBodyAccMag-std\(\)                          |              |                     |
+| /  Mean of fBodyAccMag-std\(\)                          |              |                     |
 | mean.fBodyBodyAccJerkMag.std                        | Numeric      |                     |
-|  Mean of fBodyBodyAccJerkMag-std\(\)                  |              |                     |
+| /  Mean of fBodyBodyAccJerkMag-std\(\)                  |              |                     |
 | mean.fBodyBodyGyroMag.std                           | Numeric      |                     |
-|  Mean of fBodyBodyGyroMag-std\(\)                     |              |                     |
+| /  Mean of fBodyBodyGyroMag-std\(\)                     |              |                     |
 | mean.fBodyBodyGyroJerkMag.std                       | Numeric      |                     |
-|  Mean of fBodyBodyGyroJerkMag-std\(\)                 |              |                     |
+| /  Mean of fBodyBodyGyroJerkMag-std\(\)                 |              |                     |
 	
 
 ## Relevant Papers:
