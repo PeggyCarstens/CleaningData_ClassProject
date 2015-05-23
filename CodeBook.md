@@ -18,6 +18,8 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
+A description of the experiments can be found at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
 For each record of the original tests it is provided:
 ======================================
 
@@ -26,9 +28,6 @@ For each record of the original tests it is provided:
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
-
-
-These files should be in your current working directory before running run_analysis.R
 
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature vector.
@@ -46,13 +45,19 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body\_acc\_x\_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body\_gyro\_x\_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
+
 ### run_analysis.R program \(high-level processing steps\)
 
-1.Merges the training and the test sets to create one data set.
-2.Extracts only the measurements on the mean and standard deviation for each measurement. This includes measurements for "meanFreq".
-3.Uses descriptive activity names to name the activities in the data set.
-4.Appropriately labels the data set with descriptive variable names. 
-5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. This includes measurements for "meanFreq".
+3. Uses descriptive activity names to name the activities in the data set.
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+These above files should be in your current working directory before running run_analysis.R. 
+ 
+They can be downloaded at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
 
 ## Data Dictionary - Mean\_by\_Activity_Subject.txt
 
@@ -64,15 +69,15 @@ All measurements have been normalised between -1 and +1.
 | Variable name / Description                         | Type/Size    | Values              |
 | --------------------------------------------------- | ------------ | ------------------- |
 | activity                                            | Character 10 | LAYING              |         	
-|   /  Activity Name                                     |              | SITTING             |
+| /  Activity Name                                      |              | SITTING             |
 |                                                     |              | STANDING            |
 |                                                     |              | WALKING             |
 |                                                     |              | WALKING\_DOWNSTAIRS |
 |                                                     |              | WALKING\_UPSTAIRS   |
 | subject_id                                          | Integer      |                     |
-|   /  ID of the subject who performed the activity     |              |                     |
+| /  ID of the subject who performed the activity       |              |                     |
 | mean.tBodyAcc.mean.X                                | Numeric      |                     |
-|   /  Mean of tBodyAcc-mean\(\)-X                      |              |                     |
+| /  Mean of tBodyAcc-mean\(\)-X                        |              |                     |
 | mean.tBodyAcc.mean.Y                                | Numeric      |                     |
 | /  Mean of tBodyAcc-mean\(\)-Y                        |              |                     |
 | mean.tBodyAcc.mean.Z                                | Numeric      |                     |
@@ -234,6 +239,10 @@ All measurements have been normalised between -1 and +1.
 ## Relevant Papers:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra, Jorge L. Reyes-Ortiz. Energy Efficient Smartphone-Based Activity Recognition using Fixed-Point Arithmetic. Journal of Universal Computer Science. Special Issue in Ambient Assisted Living: Home Care. Volume 19, Issue 9. May 2013
+
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. 4th International Workshop of Ambient Assited Living, IWAAL 2012, Vitoria-Gasteiz, Spain, December 3-5, 2012. Proceedings. Lecture Notes in Computer Science 2012, pp 216-223.
+
 Jorge Luis Reyes-Ortiz, Alessandro Ghio, Xavier Parra-Llanas, Davide Anguita, Joan Cabestany, Andreu Català. Human Activity and Motion Disorder Recognition: Towards Smarter Interactive Cognitive Environments. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
+
