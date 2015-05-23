@@ -52,9 +52,18 @@ The following files are available for the train and test data. Their description
 ======================================
 ## run_analysis.R program
 
-Before running run_analysis.R, download the files from the following site and and put them in your current working folder:
-
+Before running run_analysis.R, download the files from the following site and extract them to your current working folder.  
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+
+You should have the following files in your working folder:
+- test folder with subject_test.txt, X_test.txt and y-test.txt
+- train folder with subject_train.txt, X_train.txt, y_train.txt
+- activity_labels.txt
+- features.txt
+- features_info.txt
+- README.txt
+
 
 The program:
 
