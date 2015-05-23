@@ -42,14 +42,20 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
+======================================
 ## run_analysis.R program
 
-1. Merge the training and the test sets to create one data set.
-2. Extract only the measurements on the mean and standard deviation for each measurement. 
-3. Use descriptive activity names to name the activities in the data set
-4. Appropriately label the data set with descriptive variable names. 
-5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
-6. Output the results to Mean_by_Activity_Subject.txt in the current working folder.
+Before running run_analysis.R, download the files from the following site and and put them in your current working folder:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+The program:
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.  This includes the meanFreq measurements.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+6. Outputs the results to Mean_by_Activity_Subject.txt in the current working folder.
 
 
 Refer to the features_info.txt file for an explanation of the variables from the original datasets.
