@@ -64,15 +64,15 @@ All measurements have been normalised between -1 and +1.
 | Variable name / Description                         | Type/Size    | Values              |
 | --------------------------------------------------- | ------------ | ------------------- |
 | activity                                            | Character 10 | LAYING              |         	
-| \ \ Activity Name                                     |              | SITTING             |
+| / Activity Name                                       |              | SITTING             |
 |                                                     |              | STANDING            |
 |                                                     |              | WALKING             |
 |                                                     |              | WALKING\_DOWNSTAIRS |
 |                                                     |              | WALKING\_UPSTAIRS   |
 | subject_id                                          | Integer      |                     |
-| \ \ ID of the subject who performed the activity      |              |                     |
+| / ID of the subject who performed the activity        |              |                     |
 | mean.tBodyAcc.mean.X                                | Numeric      |                     |
-| \ \ Mean of tBodyAcc-mean\(\)-X                        |              |                     |
+| / Mean of tBodyAcc-mean\(\)-X                         |              |                     |
 | mean.tBodyAcc.mean.Y                                | Numeric      |                     |
 |   Mean of tBodyAcc-mean\(\)-Y                        |              |                     |
 | mean.tBodyAcc.mean.Z                                | Numeric      |                     |
