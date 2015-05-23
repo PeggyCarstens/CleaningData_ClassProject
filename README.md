@@ -56,13 +56,19 @@ Before running run_analysis.R, download the files from the following site and ex
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
-You should have the following files in your working folder:
-- test folder with subject_test.txt, X_test.txt and y-test.txt
-- train folder with subject_train.txt, X_train.txt, y_train.txt
+You should have the following files in your current working folder:
+- /test folder with subject_test.txt, X_test.txt and y_test.txt
+- /train folder with subject_train.txt, X_train.txt, y_train.txt
 - activity_labels.txt
 - features.txt
 - features_info.txt
 - README.txt
+
+
+The program was created in R-Studio version 3.1.3 (2015-03-09)
+It will install these required packages:
+- dplyr
+- tidyr
 
 
 The program:
@@ -82,5 +88,6 @@ Column headings for the Mean_by_Activity_Subject.txt file were taken from the fe
 - Single left parenthises "(" were removed
 - Single right parenthises (") were changed to hyphen "-"
 - Commas "," were changed to hypen "-"
+
 
 Refer to the CodeBook for the variables in the Mean_by_Activity_Subject.txt output file.

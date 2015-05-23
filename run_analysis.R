@@ -42,14 +42,14 @@
 #       train/x_test.txt
 #       train/y_test.txt
 
-install.packages(c("dplyr","tidyr","sqldf"))
+install.packages(c("dplyr","tidyr"))
 library(dplyr)
 library(tidyr)
-library(sqldf)
 
 # get data needed for both test and train datasets
 activity_labels <- read.table("activity_labels.txt", header=FALSE, sep="", col.names = c("activity_id","activity"))
 features <- read.table("features.txt", header=FALSE, sep="", col.names = c("feature_id", "feature"))
+
 #get column names from features table and remove special characters
 colNames = features[,2]
 colNames <- gsub("[(][)]", "", colNames) #remove "()"
